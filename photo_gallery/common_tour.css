@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+.container > img{
+    max-width: 100%;
+}
+.container{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    align-items: center;
+    border: 5px groove rgb(184, 3, 136);
+    background-color: rgb(222, 230, 196);
+    /* grid-template-areas: 
+    "a b c d"
+    "e f g h"
+    "i j k l"
+    "m n o p"; */
+}
+.container > img:nth-child(6){
+    /* grid-area: f/f/k/k; */
+    grid-column: span 2;
+    grid-row: span 2;
+}
+button{
+    float: right;
+    margin-top: auto;
+    margin-right: 620px;
+}
+button a{
+    text-decoration: none;
+    
+}
+@media screen and (max-width:700px) {
+    button{
+    margin-top: 20px;
+    width: 100%;
+    margin-right: auto;
+    }
+}
