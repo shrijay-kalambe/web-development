@@ -1,0 +1,253 @@
+html{
+    background-color: rgb(254, 255, 192);
+    /* background: radial-gradient(circle,rgb(143, 69, 158),rgb(255, 255, 255));
+    background: -webkit-radial-gradient(circle,rgb(143, 69, 158),rgb(255, 255, 255));
+    background: -ms-radial-gradient(circle,rgb(143, 69, 158),rgb(255, 255, 255));
+    background: -moz-radial-gradient(circle,rgb(143, 69, 158),rgb(255, 255, 255));
+    background: -o-radial-gradient(circle,rgb(143, 69, 158),rgb(255, 255, 255)); */
+    height: 100%;
+}
+#container{
+    height: 510px;
+    width: 800px;
+    background-color: rgb(184, 255, 51);
+    margin: 100px auto;
+    box-shadow: 5px 5px 5px 5px rgb(255, 0, 175);
+    -webkit-box-shadow: 5px 5px 5px 5px rgb(255, 0, 175);
+    -moz-box-shadow: 5px 5px 5px 5px rgb(255, 0, 175);
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    border: 1px solid rgb(255, 0, 0);
+}
+.scoreNtimer{
+    color: rgb(255, 255, 0);
+    background-color: rgb(194, 56, 212);
+    position: absolute;
+    box-shadow: 0px 5px rgb(255, 0, 144);
+    -webkit-box-shadow: 0px 5px rgb(255, 0, 144);
+    -moz-box-shadow: 0px 5px rgb(255, 0, 144);
+    padding: 8px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+#timer{
+    top: 16px;
+    left: 265px;
+    width: 310px;
+}
+#score{
+    top: 16px;
+    left: 670px;
+    width: 140px;
+}
+#correct{
+    position: absolute;
+    background-color: rgb(0, 128, 0);
+    color: rgb(233, 215, 215);
+    padding: 8px;
+    top: 82px;
+    left: 380px;
+    display: none;
+}
+#wrong{
+    position: absolute;
+    background-color: red;
+    color: rgb(233, 241, 80);
+    padding: 8px;
+    top: 82px;
+    left: 370px;
+    display: none;
+}
+
+#question{
+    height: 180px;
+    width: 600px;
+    background-color: rgb(238, 235, 167);
+    margin: 60px auto 10px auto;
+    /* box-shadow: 0px 5px rgb(255, 0, 144); */
+    border: 10px groove rgb(251, 52, 52);
+    border-radius: 5px;
+    color: rgb(126, 89, 107);
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 120px;
+    line-height: 150px;
+    z-index: 2;
+}
+#count{
+    position: absolute;
+    background-color: rgb(203, 250, 142);
+    height: 45px;
+    width: 140px;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    line-height: 50px;
+    top: 91px;
+    left: 580px;
+}
+
+#instruction{
+    width: 600px;
+    background-color: rgb(222, 221, 223);
+    margin: 10px auto;
+    box-shadow: 0px 5px rgb(255, 0, 144);
+    -webkit-box-shadow: 0px 5px rgb(255, 0, 144);
+    -moz-box-shadow: 0px 5px rgb(255, 0, 144);
+    border-radius: 5px;
+    
+}
+#instruction p{
+    padding: 1px;
+    font-size: small;
+    color: purple;
+    text-align: justify;
+    font-weight: bold;
+}
+#options{
+    
+    /* background-color: aquamarine; */
+    height: 100px;
+    width: 600px;
+    margin:10px auto ;
+}
+.box{
+    float: left;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(225, 204, 233);
+    text-align: center;
+    line-height: 90px;
+    margin-right: 66px;
+    border-radius: 5px;
+    box-shadow: 0px 5px purple;
+    -webkit-box-shadow: 0px 5px purple;
+    -moz-box-shadow: 0px 5px purple;
+    color: rgb(60, 0, 116);
+    font-size: 25px;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    cursor: pointer;
+    position: relative;
+}
+.box:active{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 127, 127);
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    box-shadow: 0px 5px white;
+    -webkit-box-shadow: 0px 5px white;
+    -moz-box-shadow: 0px 5px white;
+    top: 4px;
+    font-weight: bold;
+}
+
+#box4{
+    margin-right: 0px;
+}
+#gameover{
+    height: 350px;
+    width: 650px;
+    background-color: rgb(195, 245, 221);
+    color: rgb(255, 0, 0);
+    position: absolute;
+    text-align: center;
+    left: 95px;
+    top: 80px;
+    font-size: 45px;
+    font-weight: bold;
+    border: 5px solid rgb(50, 171, 157);
+    line-height: 80px;
+    display: none;
+    z-index: 3;
+}
+#startreset{
+    background-color: rgb(225, 204, 233);
+    position: absolute;
+    text-align: center;
+    padding: 8px;
+    color: rgb(60, 0, 116);
+    font-size: 20px;
+    box-shadow: 0px 5px purple;
+    -moz-box-shadow: 0px 5px purple;
+    -webkit-box-shadow: 0px 5px purple;
+    border-radius: 5px;
+    left: 336px;
+    top: 500px;
+    width: 150px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+
+#startreset:active{
+    color: rgb(255, 255, 0);
+    background-color: rgb(185, 46, 250);
+    transition: all 0.2s;
+    box-shadow: 0px 5px white;
+    -webkit-box-shadow: 0px 5px white;
+    -moz-box-shadow: 0px 5px white;
+    top: 498px;
+    font-weight: bold;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+.art{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(255, 0, 0);
+    
+}
+#s1{
+    top: 20px;
+    left: 20px;
+}
+#s2{
+    top: 60px;
+    left: 20px;
+}
+#s3{
+    top: 20px;
+    left: 60px;
+}
+.art1{
+    position: absolute;
+    
+    width: 8px;
+    background-color: rgb(255, 0, 0);
+    
+}
+#s4{
+    top: 300px;
+    left: 770px;
+    height: 200px;
+}
+#s5{
+    top: 175px;
+    left: 790px;
+    height: 360px;
+}
+#s6{
+    top: 300px;
+    left: 810px;
+    height: 200px;
+    
+}
+
+
